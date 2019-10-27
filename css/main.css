@@ -2,7 +2,7 @@
 * @Author: answer-zf
 * @Date:   2019-08-23 08:51:01
  * @Last Modified by: answer-zf
- * @Last Modified time: 2019-10-18 16:41:20
+ * @Last Modified time: 2019-10-27 09:56:55
 * @E-mail: 657829956@qq.com
 */
 
@@ -180,6 +180,9 @@ em {
   width: 144px;
   height: 100px;
   background: url(../img/logo.jpg) center center no-repeat;
+}
+.navbar-zf .navbar-nav {
+  height: 100px;
 }
 .navbar-zf .navbar-nav a {
   font-size: 1.2rem;
@@ -423,7 +426,7 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   width: 100%;
   height: 100%;
 }
-/*手机适配*/
+/*首页 手机适配*/
 
 @media (max-width: 768px) {
   footer .border-bottom {
@@ -433,15 +436,29 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
     padding: 1rem 2rem 0;
     font-size: 16px !important;
   }
+  .first-view-wap {
+    background: url('../img/index-wap-bg.jpg');
+  }
+  .first-view-wap .essay-1 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2;
+  }
+  .first-view-wap .essay-1 .line-out {
+    width: 70px;
+    height: 4px;
+    background-color: #e94d24;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .navbar-zf .navbar-nav {
+    height: 100%;
+  }
 }
 
+/****************************二级页面部分****************************/
 .page-banner {
-  margin-top: 80px;
-}
-
-/*二级页面公共部分*/
-.mt-80 {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 /**
