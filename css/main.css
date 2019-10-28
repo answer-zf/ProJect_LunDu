@@ -116,7 +116,7 @@ ul {
 }
 /*边框颜色*/
 .border-color-blue {
-  border-color: #225483 !important;
+  border-color: #182f62 !important;
 }
 .border-none {
   border: none !important;
@@ -179,7 +179,7 @@ em {
 .navbar-zf .navbar-brand {
   width: 144px;
   height: 100px;
-  background: url(../img/logo.jpg) center center no-repeat;
+  background: url('../img/logo.jpg') center center no-repeat;
 }
 .navbar-zf .navbar-nav {
   height: 100px;
@@ -194,7 +194,7 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   padding-left: 1rem;
 }
 .navbar-zf .navbar-toggler-icon {
-  background: url(../img/icon-phone.png);
+  background: url('../img/icon-phone.png');
 }
 .navbar-zf .navbar-toggler {
   background: #fff;
@@ -221,7 +221,7 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   .navbar-zf .navbar-brand {
     width: 144px;
     height: 100px;
-    background: url(../img/logo.jpg) center center no-repeat;
+    background: url('../img/logo.jpg') center center no-repeat;
   }
   .navbar-zf {
     padding: 0;
@@ -231,7 +231,7 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
 #nav-list .zf-nav-brand {
   width: 76px;
   height: 69px;
-  background: url(../img/logo.png) center center no-repeat;
+  background: url('../img/logo.png') center center no-repeat;
 }
 #nav-list .navbar-nav {
   justify-content: space-between;
@@ -276,7 +276,7 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
 
 /* firstview */
 .first-view {
-  background: url(../img/first-viewBg.jpg);
+  background: url('../img/first-viewBg.jpg');
 }
 .first-view .container {
   padding: 0;
@@ -355,7 +355,7 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   left: 24px;
   width: 466px;
   height: 1426px;
-  background: url(../img/first-viewPic4.png);
+  background: url('../img/first-viewPic4.png');
 }
 
 .picMarquee .picMarquee-top {
@@ -412,7 +412,7 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
 /* seconde view */
 
 .second-view {
-  background: url(../img/second-viewBg.jpg);
+  background: url('../img/second-viewBg.jpg');
 }
 .second-view .essay-1 > a:hover {
   color: #666;
@@ -461,34 +461,28 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   margin-top: 100px;
 }
 
-/**
- *
- * origin页面
- * 
- */
-.o-part1 {
-  background: url('../img/indexBg1.png');
-}
-.o-color-r {
-  background-color: #e94d24;
-}
-.o-part3 {
-  background: url('../img/indexBg3.png');
+/* origin页面 */
+
+.origin-page {
+  background: url('../img/origin-bg.jpg');
 }
 /*food*/
 .food-page {
-  background: url('../img/foodBg.png');
+  background: url('../img/food-bg.jpg');
 }
 
 /* 联系我们 */
 
 .contact {
   padding: 60px 0px;
-  background: #f5f5f5;
+  background: url('../img/contact-bg.jpg') center bottom;
 }
-
+.contact .row {
+  border: 2px solid #182f62;
+  border-radius: 14px;
+  overflow: hidden;
+}
 .contact .col-md-6:first-child {
-  background: #fff;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -510,11 +504,36 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
+  border-color: #e94d24;
+  color: #182f62;
+  border-width: 2px;
+}
+
+.contact input::-webkit-input-placeholder {
+  color: #182f62;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.contact input::-moz-placeholder {
+  color: #182f62;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.contact input:-moz-placeholder {
+  color: #182f62;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.contact input:-ms-input-placeholder {
+  color: #182f62;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 
 #use_contact .form-control {
   font-size: 16px;
   padding: 6px 0;
+  background: transparent;
 }
 #use_contact .form-group {
   margin-bottom: 26px;
@@ -527,10 +546,9 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   margin-bottom: 40px;
 }
 .contact .col-md-6:last-child {
-  background: #182f62;
+  background: url('../img/coop-2.png');
   padding-left: 80px;
   padding-right: 80px;
-  height: 365px;
   padding-top: 20px;
 }
 .contact .col-md-6:last-child h5 {
@@ -564,13 +582,17 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   background: #fff;
 }
 @media (max-width: 768px) {
+  .contact .row {
+    border-radius: 0;
+  }
+
   .contact .col-md-6:first-child {
     padding-left: 15px;
     padding-right: 15px;
   }
   .contact .col-md-6:last-child {
-    background: #182f62;
     padding-left: 15px;
+    background: url('../img/coop-2.png');
     padding-right: 15px;
     height: 365px;
     padding-top: 20px;
@@ -579,7 +601,10 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
 
 /*news*/
 .news-page {
-  background: url(../img/newsBg.png);
+  background: url('../img/news-bg.jpg');
+}
+.news-pageCont-zf {
+  background: url('../img/news-bg.jpg') center bottom;
 }
 .news-img {
   width: 200px;
@@ -597,9 +622,16 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
   transition: all 0.8s;
 }
 .news_part_content {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 0px 6px #e5e5e5;
+  border: 3px solid #182f62;
+}
+.news_part_content:hover img {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.news_part_content span {
+  transition: all 0.8s;
+}
+.news_part_content:hover span {
+  color: #182f62;
 }
 .news-text {
   padding: 0 1.5rem;
@@ -618,29 +650,15 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
     width: 100%;
   }
 }
-/*手机适配部分的样式*/
-
-.w-227 {
-  width: 227px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.coop_page .coop_part02 {
-  background: url(../img/coop_part02Bg.jpg);
-}
-.wh-142 {
-  width: 142px;
-  height: 142px;
-  border-radius: 50%;
-  background: #e94d24;
-  position: absolute;
-  top: 90px;
-  left: 50%;
-  margin-left: -71px;
+.news-page .page-link {
+  background: transparent;
+  border-color: #182f62;
 }
 
 /* coop */
+.coop-page {
+  background: url('../img/coop-bg.jpg');
+}
 .coop-page .part1 {
   background: url('../img/indexBg1.png');
 }
@@ -661,4 +679,16 @@ nav.navbar-expand-md.navbar-zf .navbar-nav .nav-link {
 }
 .coop-page .part3 {
   background: url('../img/indexBg3.png');
+}
+/* 二级页面手机适配 */
+
+@media (max-width: 768px) {
+  .origin-page,
+  .food-page,
+  .news-page,
+  .news-pageCont-zf,
+  .coop-page,
+  .contact {
+    background: url('../img/index-wap-bg.jpg');
+  }
 }
